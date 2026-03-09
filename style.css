@@ -1,0 +1,169 @@
+body{
+margin:0;
+font-family:Arial;
+color:white;
+background:linear-gradient(270deg,#000000,#0a1a2f,#000000);
+background-size:600% 600%;
+animation:bgmove 15s infinite;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:rgba(0,0,0,0.8);
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00bfff;
+}
+
+.logo{
+color:#00bfff;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:140px 20px;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero span{
+color:#00bfff;
+text-shadow:0 0 10px #00bfff;
+}
+
+.hero button{
+padding:12px 25px;
+font-size:16px;
+border:none;
+border-radius:25px;
+background:#00bfff;
+color:black;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px #00bfff;
+}
+
+/* ABOUT */
+
+.about{
+text-align:center;
+padding:80px 20px;
+max-width:700px;
+margin:auto;
+line-height:1.6;
+}
+
+/* SKILLS */
+
+.skills{
+text-align:center;
+padding:80px 20px;
+}
+
+.skill-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#111;
+padding:25px;
+width:220px;
+border-radius:10px;
+border:1px solid #00bfff;
+transition:0.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #00bfff;
+}
+
+/* EDUCATION */
+
+.education{
+text-align:center;
+padding:80px 20px;
+}
+
+.edu-card{
+background:#111;
+display:inline-block;
+padding:30px;
+border-radius:10px;
+border:1px solid #00bfff;
+}
+
+/* SOFT SKILLS */
+
+.softskills{
+text-align:center;
+padding:80px 20px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+padding:80px 20px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+width:280px;
+margin:auto;
+gap:12px;
+}
+
+input, textarea{
+padding:10px;
+border:none;
+border-radius:6px;
+}
+
+form button{
+background:#00bfff;
+border:none;
+padding:10px;
+cursor:pointer;
+border-radius:20px;
+}
+
+form button:hover{
+box-shadow:0 0 10px #00bfff;
+}
