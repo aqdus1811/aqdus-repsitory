@@ -1,16 +1,8 @@
 body{
-margin:0;
 font-family:Arial;
+margin:0;
+background:black;
 color:white;
-background:linear-gradient(270deg,#000000,#0a1a2f,#000000);
-background-size:600% 600%;
-animation:bgmove 15s infinite;
-}
-
-@keyframes bgmove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
 }
 
 /* NAVBAR */
@@ -18,134 +10,80 @@ animation:bgmove 15s infinite;
 nav{
 display:flex;
 justify-content:space-between;
-padding:20px 40px;
-background:rgba(0,0,0,0.8);
+padding:20px;
+background:#0a0a0a;
+align-items:center;
+}
+
+.logo{
+color:#00ff88;
 }
 
 nav ul{
 display:flex;
 gap:25px;
-list-style:none;
 }
 
 nav a{
 color:white;
-text-decoration:none;
 font-weight:bold;
 }
 
 nav a:hover{
-color:#00bfff;
-}
-
-.logo{
-color:#00bfff;
+color:#00ff88;
 }
 
 /* HERO */
 
 .hero{
 text-align:center;
-padding:140px 20px;
+padding:100px 20px;
 }
 
-.hero h1{
-font-size:55px;
-}
+/* SECTIONS */
 
-.hero span{
-color:#00bfff;
-text-shadow:0 0 10px #00bfff;
-}
-
-.hero button{
-padding:12px 25px;
-font-size:16px;
-border:none;
-border-radius:25px;
-background:#00bfff;
-color:black;
-cursor:pointer;
-transition:0.3s;
-}
-
-.hero button:hover{
-transform:scale(1.1);
-box-shadow:0 0 15px #00bfff;
-}
-
-/* ABOUT */
-
-.about{
+section{
 text-align:center;
-padding:80px 20px;
-max-width:700px;
-margin:auto;
-line-height:1.6;
+padding:60px 20px;
 }
 
-/* SKILLS */
-
-.skills{
-text-align:center;
-padding:80px 20px;
-}
-
-.skill-container{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-}
+/* CARDS */
 
 .card{
-background:#111;
-padding:25px;
+border:1px solid #00ff88;
+padding:20px;
+margin:15px;
+display:inline-block;
 width:220px;
-border-radius:10px;
-border:1px solid #00bfff;
+border-radius:8px;
 transition:0.3s;
-text-align:center;
+}
+
+.card p{
+font-size:14px;
+color:#cccccc;
 }
 
 .card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 20px #00bfff;
+background:#00ff88;
+color:black;
 }
 
 /* EDUCATION */
 
-.education{
-text-align:center;
-padding:80px 20px;
-}
-
-.edu-card{
-background:#111;
+.edu-box{
+border:1px solid #00ff88;
 display:inline-block;
-padding:30px;
-border-radius:10px;
-border:1px solid #00bfff;
+padding:20px;
+border-radius:8px;
 }
 
-/* SOFT SKILLS */
-
-.softskills{
-text-align:center;
-padding:80px 20px;
-}
-
-/* CONTACT */
-
-.contact{
-text-align:center;
-padding:80px 20px;
-}
+/* FORM */
 
 form{
 display:flex;
 flex-direction:column;
-width:280px;
+width:260px;
 margin:auto;
 gap:12px;
 }
@@ -153,17 +91,17 @@ gap:12px;
 input, textarea{
 padding:10px;
 border:none;
-border-radius:6px;
+border-radius:5px;
 }
 
-form button{
-background:#00bfff;
-border:none;
+button{
 padding:10px;
+background:#00ff88;
+border:none;
 cursor:pointer;
-border-radius:20px;
+border-radius:5px;
 }
 
-form button:hover{
-box-shadow:0 0 10px #00bfff;
+button:hover{
+background:white;
 }
