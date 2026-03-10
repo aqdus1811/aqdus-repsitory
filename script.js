@@ -1,7 +1,3 @@
-function scrollToSkills(){
-
-document.getElementById("skills").scrollIntoView({
-behavior:"smooth"
-});
-
-}
+window.onload = function() {
+    alert("Welcome to Aqdus's Portfolio Website!");
+};
